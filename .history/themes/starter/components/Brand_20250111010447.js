@@ -17,24 +17,17 @@ export const Brand = () => {
             {brands?.map((item, index) => {
               return (
                 <a key={index} href={item.URL}>
-                <img
-                  src={item.IMAGE}
-                  alt={item.TITLE}
-                  className="dark:hidden"
-                  width="157"
-                  height="36"
-                  style={{ objectFit: 'contain' }}
-                />
-                <img
-                  src={item.IMAGE_WHITE}
-                  alt={item.TITLE}
-                  className="hidden dark:block"
-                  width="157"
-                  height="36"
-                  style={{ objectFit: 'contain' }}
-                />
-              </a>
-              
+                  <img
+                    src={item.IMAGE}
+                    alt={item.TITLE}
+                    className='dark:hidden'
+                  />
+                  <img
+                    src={item.IMAGE_WHITE}
+                    alt={item.TITLE}
+                    className='hidden dark:block'
+                  />
+                </a>
               )
             })}
           </div>
