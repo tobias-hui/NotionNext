@@ -18,6 +18,7 @@ export const Logo = props => {
   const logoNormal = siteConfig('STARTER_LOGO')
   const { isDarkMode } = useGlobal()
   const [logo, setLogo] = useState(logoWhite)
+  const [logoTextColor, setLogoTextColor] = useState('text-white')
 
   useEffect(() => {
     // 滚动监听
@@ -29,8 +30,10 @@ export const Logo = props => {
 
       if (white || isDarkMode || homePageNavBar) {
         setLogo(logoWhite)
+        
       } else {
         setLogo(logoNormal)
+        
       }
     }, throttleMs)
 
@@ -56,8 +59,15 @@ export const Logo = props => {
             className='header-logo mr-1 h-8'
           />
         )}
+        {/* logo文字 */}
+        <span
+          onClick={() => {
+            router.push('/')
+          }}
+          className={`${logoTextColor} logo dark:text-white py-1.5 header-logo-text whitespace-nowrap text-2xl font-semibold`}>
+          {siteConfig('TITLE')}
+        </span>
       </div>
     </div>
   )
 }
-
