@@ -3,22 +3,22 @@
  */
 const CONFIG = {
   // 默认只展示Logo文字，如果设置了logo图片，会在文字左侧显示图标
-  STARTER_LOGO: '/images/starter/logo/my-logo.png', // 普通logo图片 示例：/images/starter/logo/logo.svg
-  STARTER_LOGO_WHITE: '/images/starter/logo/my-logo-white.png', // 透明底浅色logo 示例： /images/starter/logo/logo-white.svg
+  STARTER_LOGO: '/images/starter/logo/my-logo.svg', // 普通logo图片 示例：/images/starter/logo/logo.svg
+  STARTER_LOGO_WHITE: '/images/starter/logo/my-logo-white.svg', // 透明底浅色logo 示例： /images/starter/logo/logo-white.svg
 
   // MENU ， 菜单部分不在此处配置，请在Notion数据库中添加MENU
 
   // 英雄区块导航
   STARTER_HERO_ENABLE: true, // 开启英雄区
-  STARTER_HERO_TITLE_1: '跨境电商全链路代运营，助力品牌出海爆发增长', // 英雄区文字
-  STARTER_HERO_TITLE_2: '专注 Temu 和 TikTok 双引擎驱动，让品牌销量快速破圈，实现全球化布局', // 英雄区文字
+  STARTER_HERO_TITLE_1: '开源且免费的基于 Notion 笔记的网站构建工具', // 英雄区文字
+  STARTER_HERO_TITLE_2: '通过笔记无感知地建站、成倍放大您的价值', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
-  STARTER_HERO_BUTTON_1_TEXT: '了解更多', // 英雄区按钮
+  STARTER_HERO_BUTTON_1_TEXT: '开始体验', // 英雄区按钮
   STARTER_HERO_BUTTON_1_URL:
     'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_TEXT: '理解预约咨询', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_TEXT: '在Github上关注', // 英雄区按钮
   STARTER_HERO_BUTTON_2_URL: 'https://github.com/tangly1024/NotionNext', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_ICON: '/images/starter/wechat.svg', // 英雄区按钮2的图标，不需要则留空
+  STARTER_HERO_BUTTON_2_ICON: '/images/starter/github.svg', // 英雄区按钮2的图标，不需要则留空
 
   // 英雄区配图，如需隐藏，改为空值即可 ''
   STARTER_HERO_PREVIEW_IMAGE: '/images/starter/hero/hero-image.webp', // 产品预览图 ，默认读取public目录下图片
@@ -33,29 +33,29 @@ const CONFIG = {
 
   // 特性区块
   STARTER_FEATURE_ENABLE: true, // 特性区块开关
-  STARTER_FEATURE_TITLE: '千安价值观', // 特性
-  STARTER_FEATURE_TEXT_1: '解决您的跨境难题', // 特性
+  STARTER_FEATURE_TITLE: '特性', // 特性
+  STARTER_FEATURE_TEXT_1: 'NotionNext的主要特性', // 特性
   STARTER_FEATURE_TEXT_2:
-    '从选品策划到营销推广，我们为跨境卖家提供一站式解决方案，助力品牌打通全球市场。 ', // 特性
+    'NotionNext的愿景是帮助您简单、无感知地稳定地搭建自己的网站，放大品牌的价值。 ', // 特性
 
-  STARTER_FEATURE_1_TITLE_1: '深耕 Temu 平台，快速提升销量', // 特性1
-  STARTER_FEATURE_1_TEXT_1: '专业团队精通 Temu 平台规则与算法，帮助店铺精准选品、高效运营，实现流量最大化。', // 特性1
+  STARTER_FEATURE_1_TITLE_1: '免费且开源', // 特性1
+  STARTER_FEATURE_1_TEXT_1: '项目源码在Github上完全开放共享，遵循MIT协议', // 特性1
   STARTER_FEATURE_1_BUTTON_TEXT: '了解更多', // 特性1
   STARTER_FEATURE_1_BUTTON_URL: 'https://github.com/tangly1024/NotionNext', // 特性1
 
-  STARTER_FEATURE_2_TITLE_1: '玩转 TikTok，解锁内容电商红利', // 特性2
-  STARTER_FEATURE_2_TEXT_1: '通过创意短视频、直播带货及达人营销，为品牌打造流量闭环，抢占全球内容电商先机', // 特性2
+  STARTER_FEATURE_2_TITLE_1: '多种主题定制', // 特性2
+  STARTER_FEATURE_2_TEXT_1: '数十种主题,适用于不同场景，总有一款适合你', // 特性2
   STARTER_FEATURE_2_BUTTON_TEXT: '了解更多', // 特性2
   STARTER_FEATURE_2_BUTTON_URL:
     'https://docs.tangly1024.com/article/notion-next-themes', // 特性2
 
-  STARTER_FEATURE_3_TITLE_1: '定制化服务，助力品牌持续增长', // 特性3
-  STARTER_FEATURE_3_TEXT_1: '根据品牌特色提供全链路解决方案，让每一分投入都变得更有价值', // 特性3
+  STARTER_FEATURE_3_TITLE_1: '优秀的性能', // 特性3
+  STARTER_FEATURE_3_TEXT_1: '基于NextJS开发，更快的响应速度，更好的SEO', // 特性3
   STARTER_FEATURE_3_BUTTON_TEXT: '了解更多', // 特性3
   STARTER_FEATURE_3_BUTTON_URL: 'https://docs.tangly1024.com/article/next-js', // 特性3
 
-  STARTER_FEATURE_4_TITLE_1: '精准广告投放，驱动跨境电商爆发增长', // 特性4
-  STARTER_FEATURE_4_TEXT_1: '通过专业广告代理服务，我们帮助品牌在全球范围内高效引流，精准覆盖目标用户，提升 ROI。', // 特性4
+  STARTER_FEATURE_4_TITLE_1: '便捷的写作体验', // 特性4
+  STARTER_FEATURE_4_TEXT_1: '只需在Notion笔记中编修，自动同步到网站', // 特性4
   STARTER_FEATURE_4_BUTTON_TEXT: '了解更多', // 特性4
   STARTER_FEATURE_4_BUTTON_URL: 'https://docs.tangly1024.com/about', // 特性4
 
